@@ -17,7 +17,6 @@ ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 
 ENV NEWUSER klee
-#ENV NEWPASS nothingelsematters
 
 RUN useradd -m $NEWUSER
 RUN adduser $NEWUSER sudo

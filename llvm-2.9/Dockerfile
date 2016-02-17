@@ -12,7 +12,6 @@ RUN /install.sh
 # apt-get install --no-install-recommends --auto-remove -y git build-essential pkg-config file &&\
 # apt-get clean autoclean && apt-get autoremove -y && rm -rf /tmp/* /var/lib/{apt,dpkg,cache,log}
 
-
 ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 
@@ -27,8 +26,6 @@ ENV HOME /home
 USER klee
 WORKDIR /home
 ENV HOME /home
-
-# ...
 
 CMD ["/bin/bash"]
 
